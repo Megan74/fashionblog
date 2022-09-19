@@ -69,7 +69,7 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
 </EmailShareButton>
 <FacebookMessengerShareButton
   url={'https://megan-lifeblog.netlify.app/'}
-  appId={'fashion throughout the historical lens'}
+  appId={'Megan Blog'}
 >
   <FacebookMessengerIcon size={32} round />
 </FacebookMessengerShareButton>

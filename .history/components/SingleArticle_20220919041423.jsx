@@ -62,14 +62,14 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
        <div className="flex gap-6  justify-end text-lg no-underline text-white pr-8">   
 <EmailShareButton
   url={'https://megan-lifeblog.netlify.app/'}
-  subject={'fashion throughout the historical lens'}
+  subject={'Megan Blog'}
   body="body"
 >
   <EmailIcon size={32} round />
 </EmailShareButton>
 <FacebookMessengerShareButton
   url={'https://megan-lifeblog.netlify.app/'}
-  appId={'fashion throughout the historical lens'}
+  appId={''}
 >
   <FacebookMessengerIcon size={32} round />
 </FacebookMessengerShareButton>
