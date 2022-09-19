@@ -61,22 +61,22 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
 
        <div className="flex gap-6  justify-end text-lg no-underline text-white pr-8">   
 <EmailShareButton
-  url={'https://megan-lifeblog.netlify.app/'}
-  subject={'Megan Blog'}
+  url={'https://github.com/next-share'}
+  subject={'Next Share'}
   body="body"
 >
   <EmailIcon size={32} round />
 </EmailShareButton>
 <FacebookMessengerShareButton
-  url={'https://megan-lifeblog.netlify.app/'}
+  url={'https://github.com/next-share'}
   appId={''}
 >
   <FacebookMessengerIcon size={32} round />
 </FacebookMessengerShareButton>
 
 <WhatsappShareButton
-  url={'https://megan-lifeblog.netlify.app/'}
-  title={'fashion through the historical lens'}
+  url={'https://github.com/next-share'}
+  title={'next-share is a social share buttons for your next React apps.'}
   separator=":: "
 >
   <WhatsappIcon size={32} round />
