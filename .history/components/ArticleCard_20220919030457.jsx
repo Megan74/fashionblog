@@ -14,7 +14,7 @@ export default function ArticleCard({
 }) {
   return (
    
-      <section className=' text-purple-600 body-font'>
+      <section className=' text-gray-600 body-font'>
        
          
             <div className=' p-2 mx-auto mb-4 mt-4 '>
@@ -27,10 +27,10 @@ export default function ArticleCard({
                   alt='blog'
                 /></a></Link>
                 <div className='p-6 black-bg'>
-                  <h2 className='tracking-widest text-xs title-font font-medium text-purple-400 mb-1'>
+                  <h2 className='tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
                     {category}
                   </h2>
-                  <h1 className='title-font text-lg font-medium text-indigo-900 mb-3'>
+                  <h1 className='title-font text-lg font-medium text-gray-900 mb-3'>
                     {title}
                   </h1>
                   <p className='leading-relaxed mb-3'>{description}</p>

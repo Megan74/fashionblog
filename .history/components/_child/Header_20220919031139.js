@@ -9,7 +9,7 @@ export default function Header() {
 
     <>
 
-    <div className="flex gap-6 justify-end text-lg no-underline text-white mt-3 mr-9">
+    <div className="flex gap-6 justify-end text-lg no-underline text-white mt-3 mr-4">
         <Link href={'https://www.instagram.com/mate__megan/'}>
     <a className= "social cursor-pointer"><ImInstagram size={26} round="true" /></a>
     </Link>

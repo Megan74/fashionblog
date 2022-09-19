@@ -14,11 +14,11 @@ export default function ArticleCard({
 }) {
   return (
    
-      <section className=' text-purple-600 body-font'>
+      <section className=' text-gray-600 body-font'>
        
          
             <div className=' p-2 mx-auto mb-4 mt-4 '>
-              <div className='w-[55rem] lg:h-88 md:h-90 m-auto  border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden  mb-4 '>
+              <div className='w-[55rem] lg:h-88 md:h-90 m-auto  border-2 border-purple border-opacity-60 rounded-lg overflow-hidden  mb-4 '>
                 <Link href={`/article/${slug}`} ><a><Image
                   className='lg:h-48 md:h-36 w-full="true" object-cover object-center hover:opacity-75 cursor-pointer'
                   src={image}
@@ -27,10 +27,10 @@ export default function ArticleCard({
                   alt='blog'
                 /></a></Link>
                 <div className='p-6 black-bg'>
-                  <h2 className='tracking-widest text-xs title-font font-medium text-purple-400 mb-1'>
+                  <h2 className='tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
                     {category}
                   </h2>
-                  <h1 className='title-font text-lg font-medium text-indigo-900 mb-3'>
+                  <h1 className='title-font text-lg font-medium text-gray-900 mb-3'>
                     {title}
                   </h1>
                   <p className='leading-relaxed mb-3'>{description}</p>

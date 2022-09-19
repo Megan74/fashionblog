@@ -14,7 +14,7 @@ export default function ArticleCard({
 }) {
   return (
    
-      <section className=' text-purple-600 body-font'>
+      <section className=' text-gray-600 body-font'>
        
          
             <div className=' p-2 mx-auto mb-4 mt-4 '>
@@ -27,10 +27,10 @@ export default function ArticleCard({
                   alt='blog'
                 /></a></Link>
                 <div className='p-6 black-bg'>
-                  <h2 className='tracking-widest text-xs title-font font-medium text-purple-400 mb-1'>
+                  <h2 className='tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
                     {category}
                   </h2>
-                  <h1 className='title-font text-lg font-medium text-indigo-900 mb-3'>
+                  <h1 className='title-font text-lg font-medium text-purple-900 mb-3'>
                     {title}
                   </h1>
                   <p className='leading-relaxed mb-3'>{description}</p>
@@ -53,10 +53,10 @@ export default function ArticleCard({
                         <path d='M12 5l7 7-7 7'></path>
                       </svg>
                     </a>
-                    <span className='text-gray-400 ml-3 mr-3 inline-flex items-center lg:ml-auto md:ml-0  leading-none text-sm pr-3 py-1 border-r-2 border-gray-200'>
+                    <span className='text-white-400 ml-3 mr-3 inline-flex items-center lg:ml-auto md:ml-0  leading-none text-sm pr-3 py-1 border-r-2 border-gray-200'>
                       {readingTime}
                     </span>
-                    <span className='text-gray-400 inline-flex items-center leading-none text-sm'>
+                    <span className='text-white-400 inline-flex items-center leading-none text-sm'>
                       <svg
                         className='w-4 h-4 mr-1'
                         stroke='currentColor'
