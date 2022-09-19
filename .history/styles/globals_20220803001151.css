@@ -1,0 +1,16 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.social{
+    display: block;
+    background-size: 60px;
+    transform: scale(1);
+   }
+  
+  .social:hover{
+    transform: scale(1.2); 
+    transition: all 0.3s ease-in-out;
+  }

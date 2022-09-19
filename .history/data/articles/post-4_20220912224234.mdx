@@ -1,0 +1,79 @@
+---
+title:  'Building a Yelpcamp web app!'
+publishedAt: '2022-09-12'
+description: Camping and nature lovers this one is for you ❤️
+seoDescription: This is the seoDescription for this markdown file.
+category: 'Technology'
+author:
+  {
+    name: 'Megan Matanda',
+    image: 'https://media-exp1.licdn.com/dms/image/C4E03AQHOlcjIeSs7Hw/profile-displayphoto-shrink_200_200/0/1656079264419?e=1665014400&v=beta&t=iqNsDEnusO-SGUDunM-TC5ZJcMGGMq6Yn_xWwOVYXvE',
+  }
+image: '/images/pic6.jpg'
+
+---
+
+## Yelpcamp app
+
+I am currently building a camping sites suggestion app, for nature lovers.
+ That heartfelt project contains a MERN stack, that integrates frontend and backend modules, plus the bootstrap library for the designing features.
+
+The user will be able to chose among the most recommmended campsites, based upond the prices and locations. 
+After being authentified, the user has the possibility to update the campground list, 
+to delete or to suggest new ones. And the user has also the ability to rate the existing campgrounds, that she/he had already visited.
+
+The technologies and packages that I used to make the project effective and functional are:
+
+- For the application security in the server: Helmet & Dotenv.
+- For the user authentication in the browser: Passport, Joi, ExpressError & ExpressAsync middlewares.
+- To store the user’s data and the pictures in the Model pattern: Cloudinary & Mongodb.
+- To display in the frontend a pleasant design/graphic in the View: Mapbox & Bootstrap, 
+
+With these multiple technologies implemented in my application, a practical architecture is required to identify correctly the potential bugs, and also to maintain in the long-term, a readable codebase. The MVC paradigm is my foremost choice, 
+and here is how the Yelpcamp app is organized:
+
+
+
+The Routes folder is divided into 3 sections:  the Campground, the Users and the Reviews. Its role is to redirect every frontend requests to the adequate controller, by identifying the URL compositions: main route / , /campgrounds, /users, or  /review. By scanning through the request, the route will then direct the URL to the corresponding controller, so it can execute the according actions required by the user in the browser.
+The Controllers folder is also divided into 3 sections, so the Routes can transmit the request to one of them. Indeed, after the request has been directed to one of these 3 controllers designed into the folder, via the URL scanned by the server routes, the appropriate controller will execute an action according to the HTTP request sent to the backend. If the browser has sent a get request: all the controller will have to do (campground controller, user controller, or review controller) is to render a specific page, placed in the View to the frontend. Update request: via the edit button, that specific request will connect with the Model folder to connect the server with the database, then fetch the corresponding id (data id chosen from the browser to modify the information), and change any data the user wants to update, it can be the campground information as the price or the campground’s rating via the review page. Then the update controller will refresh the page with the modified information to the browser. Post request: The application Routes that will direct that specific request to the controller corresponding name (user, campground or review), will also connect to the model data structure, so it can add the new data sent from the browser to the server, it can be add a new campground, a new review, or a new user to the database and then the frontend. After the controller adds that required data, it will execute a refreshing action to render the page with the new information. Delete request: as per the update request, the deleting action via its eponym button, will activate the model section so it can retrieve via the id data, the corresponding collection/object name and erase the required data. A refreshing action will follow and render a new page with the subtracted info.
+The Model folder contains different sections matching with the application pages : User, Campground and Review. The Model is summoned upon by the controllers, so it operates through the mongoose database, by retrieving adding updating deleting specific data and be re rendered to the browser. The manipulated data is defined by the Schema model, a Mongodb functionality. Its object protoype will structure the database with flexibility, and inform which element will be displayed into the the Mongo collections.
+View folder : that folder is displayed to the user, via ejs. Every pages from the project are placed into that section. The View is only connected to the Controller and has no relation with Model no matter the request activated.
+
+## The code architecture 
+ ```js index.js box=1[30:50]
+.cloudinary : pictures remote handler
+
+.controllers : programming handler that executes specific actions when request recieved to the server.
+
+.models : data structure with personified design schemas
+
+.public : layout design CSS etc 
+
+.routes : direct the requests to the corresponding controller
+
+.seeds : template
+
+.utils : handling errors and asynchronous requests
+
+.views : graphic frontend
+
+app.js : main root
+
+middleware.js
+
+schemas.js : input validations
+```
+
+That full stack app is my 100h projects, that I put blood sweat and tears into, 
+I am really proud of it, and excited to deploy as soon as the interface is fully functional.
+Nature and camping is something I started to get into a few months ago, usually used to the urban environments, cities and all the comfortable accommodations that it offers,
+ I let you imagine my first experience in the woods, plus the time of adjustment required for me to feel comfortable and be able to sleep without fearing that a wolf or a bear would tear the tent down during the night.
+Mother Nature possesses that silent and appeasing power to get you connected on several levels within yourself and the beautiful surroundings. That atmosphere is no near comparable than other habitats :
+  in the woods, mountains, natural parks all of these wildlife  (barely)  untouched, instill a sense of responsibility, to protect what we have left, to respect the flora and fauna, 
+  preserve these remaining areas and to comprehend how each eco system functions.
+
+I hope that web application will encourage to a certain degree, people to book a tent in a campsite and experiment the wildlife for a few days, and sense how sacred our planet is.
+
+
+Here is the web application direct link : <a href="https://yelpcamp74.herokuapp.com/"> **click here** </a>
+Here is the codebase source : <a href="https://github.com/Megan74/YelpCamp"> **click here** </a>

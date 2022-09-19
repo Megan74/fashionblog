@@ -1,0 +1,17 @@
+---
+title: 'New post soon!'
+publishedAt: '2022-09-17'
+description: new post soon!
+seoDescription: This is the seoDescription for this markdown file.
+category: 'Fashion'
+
+author:
+  {
+    name: 'Megan',
+    image: "/images/me.JPG",
+  }
+image: '/images/pic1.jpg'
+  
+---
+
+
