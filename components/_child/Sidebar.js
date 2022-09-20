@@ -11,7 +11,7 @@ export default function Sidebar(){
             <p className="pb-2 ">Hi, I am Megan!<br></br>
              A 30 years old bubbly fashion enthusiast.<br></br>
              Ever since I am a kid, conformity has always been a concept,
-             that I struggle to grasp my head around. 
+             that I struggle to wrap my head around. 
              Excentric, with a big personality and a very big imagination,
              my goals have always been centered around the rules that I have specifically designed for my well-being, 
              despite the very perspicuous ones, that society had thrown at me.
