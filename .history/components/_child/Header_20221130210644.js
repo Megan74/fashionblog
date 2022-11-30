@@ -19,6 +19,8 @@ export default function Header() {
     <Link href={'#sidebar'}>
     <a className= "underline font-bold text-white cursor-pointer">About me</a>
     </Link>
+<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+<div class="commonninja_component pid-72cfef0c-c962-4e36-8af7-1f5c0dffec79"></div>
 </div>
 
 

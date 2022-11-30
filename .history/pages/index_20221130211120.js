@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import Header from '../components/_child/Header';
-import ArticleCard from '../components/ArticleCard';
-import Audio from '../components/_child/Audio';
+import ArticleCard from '../components/ArticleCard'
 import { allArticles } from 'contentlayer/generated';
 import { select } from '../utils/select';
 
@@ -16,6 +15,7 @@ export default function Home({articles}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
+      
      <main w-full="true" container="true" bg="/images/bg-pic.jpg">
      {articles.map(
             ({
@@ -43,7 +43,6 @@ export default function Home({articles}) {
 
       </main>
       <Sidebar></Sidebar>
-      <Audio></Audio>
     </div>
   )
 }

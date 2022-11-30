@@ -16,6 +16,7 @@ export default function Home({articles}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
+
      <main w-full="true" container="true" bg="/images/bg-pic.jpg">
      {articles.map(
             ({
@@ -43,7 +44,6 @@ export default function Home({articles}) {
 
       </main>
       <Sidebar></Sidebar>
-      <Audio></Audio>
     </div>
   )
 }
