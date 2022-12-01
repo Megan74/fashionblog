@@ -42,8 +42,8 @@ export default function Home({articles}) {
           )}
 
       </main>
-      <Sidebar></Sidebar>
       <Audio></Audio>
+      <Sidebar></Sidebar>
     </div>
   )
 }
