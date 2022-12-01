@@ -93,8 +93,6 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
 </div>  
 
       </div>
-      
-       
     </div>
   );
 };

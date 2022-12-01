@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Audio from './_child/Audio';
 import {
   EmailShareButton,
   EmailIcon,
@@ -54,8 +55,6 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
           {children}
         </article>
 
-       
-
 
         <Link href={'/'}>
     <a className='text-white hover:text-grey underline cursor-pointer '>Return to Homepage</a>
@@ -93,8 +92,6 @@ export const SingleArticle = ({ author, image, category, title, children }) => {
 </div>  
 
       </div>
-      
-       
     </div>
   );
 };
